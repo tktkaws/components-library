@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+---
+
+<Layout title="scrollTriggerSample">
+    <Header />
+    <main>
+        <h1>image</h1>
+        <h2>fluid-image</h2>
+        <p>maximage</p>
+        <img src="/600x400.png" alt="" />
+        <div class="fluid-image">
+            <h2>fluid-image</h2>
+            <img src="/600x400.png" alt="" />
+            <p>
+                <pre></pre>
+                <code> </code>
+            </p>
+        </div>
+    </main>
+</Layout>
+<style>
+    main {
+        margin-top: 60px;
+    }
+    .fluid-image > img {
+        /* width: 100%;
+        max-width: 400px; */
+        width: 20vw;
+        height: auto;
+    }
+</style>
